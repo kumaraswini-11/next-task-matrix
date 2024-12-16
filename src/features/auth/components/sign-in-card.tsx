@@ -2,8 +2,8 @@ import Link from "next/link";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-// import { FcGoogle } from "react-icons/fc";
-// import { FaGithub } from "react-icons/fa6";
+import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa6";
 
 import { DottedSeparator } from "@/components/dotted-separator";
 import { Button } from "@/components/ui/button";
@@ -95,12 +95,12 @@ export const SignInCard = () => {
       </div>
       <CardContent className="flex flex-col gap-y-4 p-7">
         <Button disabled={false} variant="secondary" size="lg">
-          {/* <FcGoogle className="mr-2 size-5" /> */}
+          <FcGoogle className="mr-2 size-5" />
           Login with Google
         </Button>
 
         <Button disabled={false} variant="secondary" size="lg">
-          {/* <FaGithub className="mr-2 size-5" /> */}
+          <FaGithub className="mr-2 size-5" />
           Login with Github
         </Button>
       </CardContent>

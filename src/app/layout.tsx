@@ -10,8 +10,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Jira | Landing Page",
+  title: {
+    template: "%s | Jira",
+    default: "Jira | Landing Page",
+  },
   description: "Jira Landing Screen.",
+  applicationName: "Jira",
 };
 
 export default function RootLayout({

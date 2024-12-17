@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export const metadata = {
@@ -7,20 +7,15 @@ export const metadata = {
 
 export default function NotFound() {
   return (
-    <div>
-      <h2>404 Not Found</h2>
-      <p>Could not find requested resource !</p>
-      <Image
-        className="m-0 rounded-xl"
-        src="/not-found-1024x1024.png"
-        width={300}
-        height={300}
-        sizes="300px"
-        alt="Page Not Found"
-        priority={true}
-        title="Page Not Found"
-      />
-      <Link href="/">Return Home</Link>
+    <div
+      className="flex min-h-screen flex-col items-center justify-center bg-cover bg-center bg-no-repeat text-center text-black"
+      style={{ backgroundImage: "url('/not-found-1024x1024.png')" }}
+    >
+      <Button variant="destructive" asChild>
+        <Link href="/" className="mt-[30rem]">
+          Return Home
+        </Link>
+      </Button>
     </div>
   );
 }

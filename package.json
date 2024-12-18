@@ -10,12 +10,14 @@
     "type-check": "tsc -b",
     "prettier:check": "npx prettier . --check",
     "prettier:format": "npx prettier . --write",
-    "db:push": "npx drizzle-kit push",
     "db:generate": "npx drizzle-kit generate",
+    "db:migrate": "tsx ./src/db/migrate.ts",
+    "db:push": "npx drizzle-kit push",
     "db:studio": "npx drizzle-kit studio --host=0.0.0.0 --port=5510 --verbose"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@kinde-oss/kinde-auth-nextjs": "^2.4.6",
     "@neondatabase/serverless": "^0.10.4",
     "@radix-ui/react-avatar": "^1.1.2",
     "@radix-ui/react-checkbox": "^1.1.3",

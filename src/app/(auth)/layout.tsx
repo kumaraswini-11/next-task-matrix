@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/logo";
 
 interface AuthLayoutProps {
   children: React.ReactNode;
@@ -18,7 +19,7 @@ const AuthLayout = ({ children }: AuthLayoutProps) => {
     <main className="min-h-screen bg-neutral-100">
       <div className="mx-auto max-w-screen-2xl p-4">
         <nav className="animate-slide flex items-center justify-between">
-          <Image src="/app-logo.svg" height={56} width={152} alt="Logo" />
+          <Logo />
           <Button asChild variant="secondary">
             <Link href={isSignIn ? "/sign-up" : "/sign-in"}>
               {isSignIn ? "Sign Up" : "Login"}

@@ -16,6 +16,7 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
+// import { handleAuthAction } from "../auth-actions";
 
 const signInSchema = z.object({
   email: z.string().email(),
@@ -32,7 +33,8 @@ export const SignInCard = () => {
   });
 
   const onSubmit = (values: z.infer<typeof signInSchema>) => {
-    console.log({ values });
+    // console.log({ ...values });
+    // handleAuthAction("credentials", { ...values });
   };
 
   return (
@@ -94,12 +96,22 @@ export const SignInCard = () => {
         <DottedSeparator />
       </div>
       <CardContent className="flex flex-col gap-y-4 p-7">
-        <Button disabled={false} variant="secondary" size="lg">
+        <Button
+          // onClick={() => handleAuthAction("google", null)}
+          disabled={false}
+          variant="secondary"
+          size="lg"
+        >
           <FcGoogle className="mr-2 size-5" />
           Login with Google
         </Button>
 
-        <Button disabled={false} variant="secondary" size="lg">
+        <Button
+          // onClick={() => handleAuthAction("github", null)}
+          disabled={false}
+          variant="secondary"
+          size="lg"
+        >
           <FaGithub className="mr-2 size-5" />
           Login with Github
         </Button>

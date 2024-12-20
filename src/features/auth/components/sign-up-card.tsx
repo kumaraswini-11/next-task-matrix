@@ -22,6 +22,7 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
+// import { handleAuthAction } from "../auth-actions";
 
 const signUpSchema = z.object({
   name: z.string().min(1, "Required"),
@@ -128,12 +129,22 @@ export const SignUpCard = () => {
         <DottedSeparator />
       </div>
       <CardContent className="flex flex-col gap-y-4 p-7">
-        <Button disabled={false} variant="secondary" size="lg">
+        <Button
+          // onClick={() => handleAuthAction("google", null)}
+          disabled={false}
+          variant="secondary"
+          size="lg"
+        >
           <FcGoogle className="mr-2 size-5" />
           Continue with Google
         </Button>
 
-        <Button disabled={false} variant="secondary" size="lg">
+        <Button
+          // onClick={() => handleAuthAction("github", null)}
+          disabled={false}
+          variant="secondary"
+          size="lg"
+        >
           <FaGithub className="mr-2 size-5" />
           Continue with Github
         </Button>

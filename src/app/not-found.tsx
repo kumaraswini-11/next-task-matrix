@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Jira | 404 Not Found",
+  title: "404 Not Found | Jira",
 };
 
 export default function NotFound() {

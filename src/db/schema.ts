@@ -34,6 +34,7 @@ export const usersTable = table(
     authProvider: authProviderEnum("auth_provider").default("credential"),
     role: rolesEnum().default("member"),
     isActive: t.boolean("is_active").default(true),
+    emailVerified: t.timestamp("email_verified", { mode: "date" }),
     ...timestamps,
   },
   (table) => {

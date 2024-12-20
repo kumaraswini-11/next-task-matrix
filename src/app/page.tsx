@@ -11,18 +11,21 @@ import {
 
 export default function Home() {
   return (
-    <div className="flex gap-4">
-      <Button variant="destructive">Click me</Button>
-      <Button variant="ghost">Click me</Button>
-      <Button variant="link">Click me</Button>
-      <Button variant="secondary">Click me</Button>
-      <Button variant="outline">Click me</Button>
-      <Button variant="default">Click me</Button>
-      <Button variant="muted">Click me</Button>
-      <Button variant="teritrary">Click me</Button>
+    <>
+      <h1>Marketing Landing Page</h1>
+      <div className="flex gap-4">
+        <Button variant="destructive">Click me</Button>
+        <Button variant="ghost">Click me</Button>
+        <Button variant="link">Click me</Button>
+        <Button variant="secondary">Click me</Button>
+        <Button variant="outline">Click me</Button>
+        <Button variant="default">Click me</Button>
+        <Button variant="muted">Click me</Button>
+        <Button variant="teritrary">Click me</Button>
 
-      <SelectDemo />
-    </div>
+        <SelectDemo />
+      </div>
+    </>
   );
 }
 

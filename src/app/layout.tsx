@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+// import { SessionProvider } from "next-auth/react";
 
 import { cn } from "@/lib/utils";
 
@@ -12,9 +13,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: {
     template: "%s | Jira",
-    default: "Jira | Landing Page",
+    default: "Home | Jira",
   },
-  description: "Jira Landing Screen.",
+  description: "Jira Home Screen.",
   applicationName: "Jira",
 };
 
@@ -24,10 +25,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    // <SessionProvider>
+    <html lang="en" suppressHydrationWarning>
       <body className={cn(inter.className, "min-h-screen antialiased")}>
         {children}
       </body>
     </html>
+    // {/* </SessionProvider> */}
   );
 }

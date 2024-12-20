@@ -3,7 +3,7 @@ import { migrate } from "drizzle-orm/neon-http/migrator";
 
 const main = async () => {
   try {
-    // @ts-ignore
+    // @typescript-eslint/no-explicit-any
     await migrate(db as any, {
       migrationsFolder: "src/db/migrations",
     });

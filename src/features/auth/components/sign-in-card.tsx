@@ -33,7 +33,7 @@ export const SignInCard = () => {
   });
 
   const onSubmit = (values: z.infer<typeof signInSchema>) => {
-    // console.log({ ...values });
+    console.log({ ...values });
     // handleAuthAction("credentials", { ...values });
   };
 

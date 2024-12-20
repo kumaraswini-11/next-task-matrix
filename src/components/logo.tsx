@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 export const Logo = ({
-  logoSrc = "/jira.svg",
+  logoSrc = "/task-matrix.svg",
   logoWidth = 48,
   logoHeight = 56,
   showText = true,
-  altText = "Jira Logo",
+  altText = "TaskMatrix Logo",
 }) => {
   return (
     <div className="flex items-center justify-start gap-2 pl-2.5">
@@ -18,7 +18,7 @@ export const Logo = ({
       />
       {showText && (
         <span className="text-xl font-medium sm:text-2xl md:text-3xl">
-          Jira
+          TaskMatrix
         </span>
       )}
     </div>

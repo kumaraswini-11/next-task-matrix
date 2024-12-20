@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
 // Make sure adding Sentry options is the last code to run before exporting
 export default withSentryConfig(nextConfig, {
   org: "personal-tp6",
-  project: "jira",
+  project: "task-matrix",
 
   // An auth token is required for uploading source maps.
   authToken: process.env.SENTRY_AUTH_TOKEN,

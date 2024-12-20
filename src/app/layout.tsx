@@ -12,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Jira",
-    default: "Home | Jira",
+    template: "%s | TaskMatrix",
+    default: "Home | TaskMatrix",
   },
-  description: "Jira Home Screen.",
-  applicationName: "Jira",
+  description: "TaskMatrix Home Screen.",
+  applicationName: "TaskMatrix",
 };
 
 export default function RootLayout({

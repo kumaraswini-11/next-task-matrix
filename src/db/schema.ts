@@ -30,7 +30,7 @@ export const usersTable = table(
     email: t.varchar({ length: 255 }).notNull().unique(),
     phone: t.varchar({ length: 255 }).unique(),
     avatarUrl: t.varchar("avatar_url", { length: 500 }),
-    password: t.varchar({ length: 255 }).notNull(),
+    password: t.varchar({ length: 255 }).notNull(), // hashed password stored to database
     authProvider: authProviderEnum("auth_provider").default("credential"),
     role: rolesEnum().default("member"),
     isActive: t.boolean("is_active").default(true),

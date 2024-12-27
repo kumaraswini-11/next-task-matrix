@@ -6,9 +6,9 @@ config({ path: ".env" });
 
 const sql = neon(process.env.DATABASE_URL!);
 // @typescript-eslint/no-explicit-any
-const db = drizzle({ client: sql as any, casing: "snake_case" });
-
-// Logger
-// const db = drizzle(sql as any, { casing: "snake_case", logger: true });
+const db = drizzle(sql as any, {
+  casing: "snake_case",
+  // logger: true
+});
 
 export { db };

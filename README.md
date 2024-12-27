@@ -28,3 +28,6 @@ Open your browser and navigate to: `http://localhost:3000` -->
 - [Combining the Benefits of Session Tokens and JWTs](https://clerk.com/blog/combining-the-benefits-of-session-tokens-and-jwts)
 - [Sentry JavaScript Issue #12044](https://github.com/getsentry/sentry-javascript/issues/12044)
 - [Migration Error - Node-Postgres Issue #3120](https://github.com/brianc/node-postgres/issues/3120)
+- [neondatabase/serverless generic type defaults cause type error](https://github.com/drizzle-team/drizzle-orm/issues/1945?utm_source=chatgpt.com)
+- [](https://authjs.dev/getting-started/typescript#module-augmentation)
+- [](https://www.youtube.com/watch?v=mXYeQFj2A8w)
